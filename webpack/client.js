@@ -18,7 +18,8 @@ module.exports = {
   // output files and chunks
   output: {
     path: path.resolve(directory, 'build-client'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/'
   },
 
   // module/loaders configuration

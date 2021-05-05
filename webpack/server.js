@@ -18,7 +18,8 @@ module.exports = {
   // output files and chunks
   output: {
     path: path.resolve(directory, 'build-server'),
-    filename: '[name].js'
+    filename: '[name].js',
+    publicPath: '/' // to avoid errors in nested routes & sub paths
   },
 
   // module/loaders configuration
