@@ -4,4 +4,5 @@ build-client
 build-server
 
 # files
+.DS_Store
 dummy.js

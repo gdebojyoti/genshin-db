@@ -1,30 +1,41 @@
-const express = require('express')
-const fs = require('fs')
-const path = require('path')
-const React = require('react')
-const ReactDOMServer = require('react-dom/server')
+import React from 'react'
+import ReactDOMServer from 'react-dom/server'
+import { StaticRouter } from 'react-router-dom'
+
+import express from 'express'
+import fs from 'fs'
+import path from 'path'
+
+import App from '../shared'
 
 // create express application
 const app = express()
 
-// import App component
-const { default: App } = require('../shared')
+console.log('__dirname', path.resolve(__dirname, '../build-server/index.html'))
 
 // serve static assets
-app.get(/\.(js|css|map|ico)$/, express.static(path.resolve(__dirname, '../../build-server')))
+app.get(/\.(js|css|map|ico|png)$/, express.static(path.resolve(__dirname, '../build-client')))
 
 // for any other requests, send `index.html` as a response
 app.use('*', (req, res) => {
   // read `index.html` file
-  let indexHTML = fs.readFileSync(path.resolve(__dirname, '../../build-server/index.html'), {
+  let indexHTML = fs.readFileSync(path.resolve(__dirname, '../build-server/index.html'), {
     encoding: 'utf8'
   })
 
+  console.log('\nreq.url', req.url)
+  console.log('req.originalUrl', req.originalUrl)
+  console.log('req.path', req.path)
+
   // get HTML string from the `App` component
-  const appHTML = ReactDOMServer.renderToString(<App />)
+  const appHTML = ReactDOMServer.renderToString(
+    <StaticRouter location={req.originalUrl}>
+      <App />
+    </StaticRouter>
+  )
 
   // populate `#app` element with `appHTML`
-  indexHTML = indexHTML.replace('<div id="app" class="app"></div>', `<div id="app">${appHTML}</div>`)
+  indexHTML = indexHTML.replace('<div id="app" class="app"></div>', `<div id="app" class="app">${appHTML}</div>`)
 
   // set header and status
   res.contentType('text/html')
@@ -33,7 +44,7 @@ app.use('*', (req, res) => {
   return res.send(indexHTML)
 })
 
-const PORT = 8000
+const PORT = 8080
 
 // run express server on port 9000
 app.listen(PORT, () => {

@@ -3,16 +3,19 @@ import Welcome from './pages/Welcome'
 
 const routes = [
   {
+    path: '/',
+    component: Welcome,
+    isExact: true
+  },
+  {
     path: '/character/:id',
-    component: Character
+    component: Character,
+    isExact: true
   },
   {
     path: '/character',
-    component: Character
-  },
-  {
-    path: '/',
-    component: Welcome
+    component: Character,
+    isExact: true
   }
 ]
 
