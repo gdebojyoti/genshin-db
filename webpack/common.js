@@ -31,6 +31,7 @@ const commonConfig = {
     new HTMLWebpackPlugin({
       filename: 'index.html',
       template: path.resolve(directory, 'src/shared/index.html'),
+      hash: true,
       minify: false
     }),
 
@@ -48,7 +49,10 @@ const commonConfig = {
   // resolve files configuration
   resolve: {
     // file extensions
-    extensions: ['.js', '.scss', '.css']
+    extensions: ['.js', '.scss', '.css'],
+    alias: {
+      shared: path.resolve(directory, 'src/shared')
+    }
   },
 
   // webpack optimizations
@@ -65,6 +69,27 @@ const commonConfig = {
         }
       }
     }
+    // splitChunks: {
+    //   chunks: 'async',
+    //   minSize: 20000,
+    //   minRemainingSize: 0,
+    //   minChunks: 1,
+    //   maxAsyncRequests: 30,
+    //   maxInitialRequests: 30,
+    //   enforceSizeThreshold: 50000,
+    //   cacheGroups: {
+    //     defaultVendors: {
+    //       test: /[\\/]node_modules[\\/]/,
+    //       priority: -10,
+    //       reuseExistingChunk: true
+    //     },
+    //     default: {
+    //       minChunks: 2,
+    //       priority: -20,
+    //       reuseExistingChunk: true
+    //     }
+    //   }
+    // }
   }
 }
 
