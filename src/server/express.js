@@ -8,6 +8,18 @@ import path from 'path'
 
 import App from '../shared'
 
+// import webpack from 'webpack'
+// import clientConfig from '../../webpack/client'
+
+// const compiler = webpack(clientConfig)
+// compiler.run((err, stats) => {
+//   if (err) {
+//     console.log('==== err', err)
+//     throw err
+//   }
+//   console.log('stats', stats)
+// })
+
 // create express application
 const app = express()
 

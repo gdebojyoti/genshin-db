@@ -8,7 +8,8 @@
     "start": "nodemon build-server/main.js",
     "build:client": "NODE_ENV=development webpack --config webpack/client.js --watch",
     "build:server": "NODE_ENV=development webpack --config webpack/server.js --watch",
-    "build": "NODE_ENV=production webpack --config webpack/server.js"
+    "build:prod:client": "NODE_ENV=production webpack --config webpack/client.js",
+    "build:prod:server": "NODE_ENV=production webpack --config webpack/server.js"
   },
   "keywords": [],
   "author": "",

@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Albedo",
+    "key": "albedo",
+    "vision_key": "GEO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "A genius known as the Kreideprinz, he is the Chief Alchemist and Captain of the Investigation Team of the Knights of Favonius."
+  },
+  {
+    "name": "Amber",
+    "key": "amber",
+    "vision_key": "PYRO",
+    "weapon_type": "BOW",
+    "rarity": 4,
+    "description": "Always energetic and full of life, Amber's the best - albeit only - Outrider of the Knights of Favonius."
+  },
+  {
+    "name": "Barbara",
+    "key": "barbara",
+    "vision_key": "HYDRO",
+    "weapon_type": "CATALYST",
+    "rarity": 4,
+    "description": "Every denizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine."
+  },
+  {
+    "name": "Bennett",
+    "key": "bennett",
+    "vision_key": "PYRO",
+    "weapon_type": "SWORD",
+    "rarity": 4,
+    "description": "A righteous and good-natured adventurer from Mondstadt who's unfortunately extremely unlucky."
+  },
+  {
+    "name": "Chongyun",
+    "key": "chongyun",
+    "vision_key": "CRYO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "A young exorcist from a family of exorcists. He does everything he can to suppress his abundance of yang energy."
+  },
+  {
+    "name": "Diluc",
+    "key": "diluc",
+    "vision_key": "PYRO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 5,
+    "description": "The tycoon of a winery empire in Mondstadt, unmatched in every possible way."
+  },
+  {
+    "name": "Diona",
+    "key": "diona",
+    "vision_key": "CRYO",
+    "weapon_type": "BOW",
+    "rarity": 4,
+    "description": "A young lady who has inherited trace amounts of non-human blood. She is the incredibly popular bartender of the Cat's Tail tavern."
+  },
+  {
+    "name": "Fischl",
+    "key": "fischl",
+    "vision_key": "ELECTRO",
+    "weapon_type": "BOW",
+    "rarity": 4,
+    "description": "A mysterious girl who calls herself \"Prinzessin der Verurteilung\" and travels with a night raven named Oz."
+  },
+  {
+    "name": "Ganyu",
+    "key": "ganyu",
+    "vision_key": "CRYO",
+    "weapon_type": "BOW",
+    "rarity": 5,
+    "description": "The secretary at Yuehai Pavilion. The blood of the qilin, an illuminated beast, flows within her veins."
+  },
+  {
+    "name": "Hu Tao",
+    "key": "hu tao",
+    "vision_key": "PYRO",
+    "weapon_type": "POLEARM",
+    "rarity": 5,
+    "description": "The 77th Director of the Wangsheng Funeral Parlor. She took over the business at a rather young age."
+  },
+  {
+    "name": "Jean",
+    "key": "jean",
+    "vision_key": "ANEMO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "The righteous and rigorous Dandelion Knight, and Acting Grand Master of Mondstadt's Knights of Favonius"
+  },
+  {
+    "name": "Kaeya",
+    "key": "kaeya",
+    "vision_key": "CRYO",
+    "weapon_type": "SWORD",
+    "rarity": 4,
+    "description": "A thinker in the Knights of Favonius with a somewhat exotic appearance."
+  },
+  {
+    "name": "Mona",
+    "key": "mona",
+    "vision_key": "HYDRO",
+    "weapon_type": "CATALYST",
+    "rarity": 5,
+    "description": "A mysterious young astrologer who proclaims herself to be \"Astrologist Mona Megistus,\" and who possesses abilities to match the title. Erudite, but prideful."
+  },
+  {
+    "name": "Ningguang",
+    "key": "ningguang",
+    "vision_key": "GEO",
+    "weapon_type": "CATALYST",
+    "rarity": 4,
+    "description": "The Tianquan of Liyue Qixing. Her wealth is unsurpassed in all of Teyvat."
+  },
+  {
+    "name": "Noelle",
+    "key": "noelle",
+    "vision_key": "GEO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "A maid who faithfully serves the Knights of Favonius that dreams of joining their ranks someday."
+  },
+  {
+    "name": "Qiqi",
+    "key": "qiqi",
+    "vision_key": "CRYO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "An apprentice and herb gatherer at Bubu Pharmacy. An undead with a bone-white complexion, she seldom has much in the way of words or emotion."
+  },
+  {
+    "name": "Razor",
+    "key": "razor",
+    "vision_key": "ELECTRO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "A boy who lives among the wolves in Wolvendom of Mondstadt, away from human civilization. As agile as lightning."
+  },
+  {
+    "name": "Rosaria",
+    "key": "rosaria",
+    "vision_key": "CRYO",
+    "weapon_type": "POLEARM",
+    "rarity": 4,
+    "description": "A sister of the church, though you wouldn't know it if it weren't for her attire. Known for her sharp, cold words and manner, she often works alone."
+  },
+  {
+    "name": "Sucrose",
+    "key": "sucrose",
+    "vision_key": "ANEMO",
+    "weapon_type": "CATALYST",
+    "rarity": 4,
+    "description": "An alchemist filled with curiosity about all things. She researches bio-alchemy."
+  },
+  {
+    "name": "Tartaglia",
+    "key": "tartaglia",
+    "vision_key": "HYDRO",
+    "weapon_type": "BOW",
+    "rarity": 5,
+    "description": "No. 11 of The Harbingers, also known as \"Childe\". His name is highly feared on the battlefield."
+  },
+  {
+    "name": "Traveler (Anemo)",
+    "key": "traveler-anemo",
+    "vision_key": "ANEMO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven."
+  },
+  {
+    "name": "Traveler (Geo)",
+    "key": "traveler-geo",
+    "vision_key": "GEO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "A traveler from another world who had their only kin taken away, forcing them to embark on a journey to find The Seven."
+  },
+  {
+    "name": "Venti",
+    "key": "venti",
+    "vision_key": "ANEMO",
+    "weapon_type": "BOW",
+    "rarity": 5,
+    "description": "One of the many bards of Mondstadt, who freely wanders the city's streets and alleys."
+  },
+  {
+    "name": "Xiangling",
+    "key": "xiangling",
+    "vision_key": "PYRO",
+    "weapon_type": "POLEARM",
+    "rarity": 4,
+    "description": "A renowned chef from Liyue. She's extremely passionate about cooking and excels at making her signature hot and spicy dishes."
+  },
+  {
+    "name": "Xiao",
+    "key": "xiao",
+    "vision_key": "ANEMO",
+    "weapon_type": "POLEARM",
+    "rarity": 5,
+    "description": "A yaksha adeptus that defends Liyue. Also heralded as the \"Conqueror of Demons\" and \"Vigilant Yaksha.\""
+  },
+  {
+    "name": "Xingqiu",
+    "key": "xingqiu",
+    "vision_key": "HYDRO",
+    "weapon_type": "SWORD",
+    "rarity": 4,
+    "description": "A young man carrying a longsword who is frequently seen at book booths. He has a chivalrous heart and yearns for justice and fairness for all."
+  },
+  {
+    "name": "Xinyan",
+    "key": "xinyan",
+    "vision_key": "PYRO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "Liyue's sole rock 'n' roll musician. She rebels against ossified prejudices using her music and passionate singing."
+  },
+  {
+    "name": "Zhongli",
+    "key": "zhongli",
+    "vision_key": "GEO",
+    "weapon_type": "POLEARM",
+    "rarity": 5,
+    "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things."
+  },
+  {
+    "name": "Keqing",
+    "key": "keqing",
+    "vision_key": "ELECTRO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "The Yuheng of the Liyue Qixing. Has much to say about Rex Lapis' unilateral approach to policymaking in Liyue - but in truth, gods admire skeptics such as her quite a lot."
+  },
+  {
+    "name": "Klee",
+    "key": "klee",
+    "vision_key": "PYRO",
+    "weapon_type": "CATALYST",
+    "rarity": 5,
+    "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight."
+  },
+  {
+    "name": "Lisa",
+    "key": "lisa",
+    "vision_key": "ELECTRO",
+    "weapon_type": "CATALYST",
+    "rarity": 4,
+    "description": "The languid but knowledgeable Librarian of the Knights of Favonius who was deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries."
+  },
+  {
+    "name": "Beidou",
+    "key": "beidou",
+    "vision_key": "ELECTRO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman."
+  }
+]

@@ -5,5 +5,7 @@ export const wrapperStyle = css`
 
   img {
     width: 200px;
+    height: 360px;
+    object-fit: contain;
   }
 `
