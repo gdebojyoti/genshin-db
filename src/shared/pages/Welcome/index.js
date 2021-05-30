@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-import CharacterCard from '../../components/CharacterCard'
-import characters from '../../data/charactersBasicData.json'
+import CharacterCard from 'shared/components/CharacterCard'
+import characters from 'shared/data/charactersBasicData.json'
 
 const Welcome = () => {
   useEffect(() => {

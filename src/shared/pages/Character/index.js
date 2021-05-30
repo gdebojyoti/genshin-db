@@ -1,9 +1,13 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
+import { Link, withRouter } from 'react-router-dom'
 
-import img from '../../assets/characters/portraits/albedo.png'
+import Image from 'shared/components/common/Image'
+
+import basicData from 'shared/data/charactersBasicData.json'
+import secondaryData from 'shared/data/charactersAdvancedData.json'
+
 import {
-  wrapperStyle
+  portraitStyle
 } from './style'
 
 const Character = ({ match, ...rest }) => {
@@ -22,13 +26,42 @@ const Character = ({ match, ...rest }) => {
     )
   }
 
-  return (
-    <div css={wrapperStyle}>
-      This is a sample character page.
-      <br />
-      It belongs to {id}.
+  const basicInfo = basicData.find(({ key }) => key === id.toLowerCase())
+  const advancedInfo = secondaryData.find(({ key }) => key === id.toLowerCase())
+  console.log('character', basicInfo, advancedInfo)
 
-      <img src={img} />
+  // character id is mandatory
+  if (!basicInfo || !advancedInfo) {
+    return (
+      <div>
+        Character not found!
+      </div>
+    )
+  }
+
+  const { name, rarity, vision_key: vision, weapon_type: weapon, description, key } = basicInfo
+  const { nation, constellation } = advancedInfo
+
+  return (
+    <div>
+      <h1>{name}</h1>
+      Class / Vision: {vision}
+      <br />
+      Weapon wielded: {weapon}
+      <br />
+      {rarity} star character
+      <br />
+      {description}
+      <br />
+      Nation: {nation}
+      <br />
+      Constellation: {constellation}
+
+      <br />
+      <Image style={portraitStyle} alt={`${name} portrait image from Genshin Impact`} src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/${key}/portrait.png`} />
+      <br />
+
+      <Link to='/'>Return to All Characters</Link>
     </div>
   )
 }

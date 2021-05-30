@@ -1,5 +1,5 @@
-import Character from './pages/Character'
-import Welcome from './pages/Welcome'
+import Character from 'shared/pages/Character'
+import Welcome from 'shared/pages/Welcome'
 
 const routes = [
   {
