@@ -1,31 +1,9 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 
 import CharacterCard from 'shared/components/CharacterCard'
 import characters from 'shared/data/charactersBasicData.json'
 
 const Welcome = () => {
-  useEffect(() => {
-    const basicKeys = ['name', 'vision_key', 'weapon_type', 'rarity', 'description']
-    const extraKeys = ['nation', 'constellation', 'skillTalents', 'passiveTalents', 'constellations']
-    window.charBsc = []
-    window.charAdv = []
-    characters.forEach(character => {
-      const basicData = {}
-      basicKeys.forEach(key => {
-        basicData[key] = character[key]
-        basicData.key = character.name.toLowerCase()
-      })
-
-      const advancedData = {}
-      extraKeys.forEach(key => {
-        advancedData[key] = character[key]
-        advancedData.key = character.name.toLowerCase()
-      })
-
-      window.charBsc.push(basicData)
-      window.charAdv.push(advancedData)
-    })
-  }, [])
   return (
     <div>
       <header>
