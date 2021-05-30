@@ -8,13 +8,15 @@ const Image = (props) => {
   const {
     src = '',
     style,
-    alt = ''
+    alt = '',
+    lazy = true
   } = props
   return (
     <img
       src={src}
       css={[baseImageStyle, style]}
       alt={alt}
+      loading={lazy ? 'lazy' : 'eager'}
     />
   )
 }
