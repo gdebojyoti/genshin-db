@@ -1,7 +1,6 @@
 import React from 'react'
 
-import CharacterCard from 'shared/components/CharacterCard'
-import characters from 'shared/data/charactersBasicData.json'
+import CharactersList from 'shared/components/CharactersList'
 
 const Welcome = () => {
   return (
@@ -12,11 +11,7 @@ const Welcome = () => {
         </h1>
       </header>
 
-      <h2>Character list</h2>
-      {characters.map(data => {
-        const { key } = data
-        return <CharacterCard data={data} key={key} />
-      })}
+      <CharactersList />
 
       <footer>
         <strong>P.S.</strong> We are not affiliated with <strong>MiHoYo</strong> in any way.
