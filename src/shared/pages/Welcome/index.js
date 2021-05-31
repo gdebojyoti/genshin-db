@@ -1,10 +1,13 @@
 import React from 'react'
 
+import MetaTags from 'shared/components/common/MetaTags'
 import CharactersList from 'shared/components/CharactersList'
 
 const Welcome = () => {
   return (
     <div>
+      <MetaTags />
+
       <header>
         <h1>
           Welcome to the Genshin Impact Database.

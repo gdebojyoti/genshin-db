@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOMServer from 'react-dom/server'
 import { StaticRouter } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 
 import express from 'express'
 import fs from 'fs'
@@ -45,9 +46,16 @@ app.use('*', (req, res) => {
       <App />
     </StaticRouter>
   )
+  const helmet = Helmet.renderStatic()
 
   // populate `#app` element with `appHTML`
   indexHTML = indexHTML.replace('<div id="app" class="app"></div>', `<div id="app" class="app">${appHTML}</div>`)
+  // insert meta tags
+  indexHTML = indexHTML.replace('$$METATAGS$$', `
+    ${helmet.title.toString()}
+    ${helmet.meta.toString()}
+    ${helmet.link.toString()}
+  `)
 
   // set header and status
   res.contentType('text/html')

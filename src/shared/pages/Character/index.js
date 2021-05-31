@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router-dom'
 
+import MetaTags from 'shared/components/common/MetaTags'
 import Image from 'shared/components/common/Image'
 
 import basicData from 'shared/data/charactersBasicData.json'
@@ -44,6 +45,11 @@ const Character = ({ match, ...rest }) => {
 
   return (
     <div>
+      <MetaTags
+        title={`${name} character details | Genshin Impact DB`}
+        description={`${name} details | Genshin Impact DB`}
+      />
+
       <h1>{name}</h1>
       Class / Vision: {vision}
       <br />
