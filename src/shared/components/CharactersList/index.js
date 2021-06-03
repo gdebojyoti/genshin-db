@@ -4,7 +4,10 @@ import CharacterCard from 'shared/components/CharacterCard'
 import CharactersFilter from 'shared/components/CharactersFilter'
 
 import characters from 'shared/data/charactersBasicData.json'
-import { inlineResetStyle } from './style'
+import {
+  inlineResetStyle,
+  cardsContainerStyle
+} from './style'
 
 const CharactersList = () => {
   const [inputValue, setInputValue] = useState('')
@@ -61,10 +64,12 @@ const CharactersList = () => {
         <h3>Showing {results.length} matching character{results.length > 1 ? 's' : ''}</h3>
       )}
 
-      {!!results.length && results.map(data => {
-        const { key } = data
-        return <CharacterCard data={data} key={key} />
-      })}
+      <div css={cardsContainerStyle}>
+        {!!results.length && results.map((data, index) => {
+          const { key } = data
+          return <CharacterCard data={data} index={index} key={key} />
+        })}
+      </div>
     </div>
   )
 }

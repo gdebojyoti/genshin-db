@@ -3,15 +3,33 @@ import { Link } from 'react-router-dom'
 
 import Image from 'shared/components/common/Image'
 
-import { iconStyle } from './style'
+import {
+  iconStyle,
+  cardStyle,
+  titleStyle,
+  subtitleStyle
+} from './style'
 
-const CharacterCard = ({ data }) => {
-  const { name, rarity, vision_key: vision, weapon_type: weapon, description, key } = data
+const CharacterCard = ({ data, index }) => {
+  const {
+    name,
+    // rarity,
+    vision_key: vision,
+    // weapon_type: weapon,
+    // description,
+    key
+  } = data
+
   return (
-    <article>
-      <h3>{name}</h3>
-      <Image style={iconStyle} alt={`${name} icon from Genshin Impact`} src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/${key}/icon.png`} />
-      <br />
+    <Link to={`/character/${key}`} css={cardStyle(vision, index)}>
+      <Image
+        style={iconStyle(index)}
+        alt={`${name} icon from Genshin Impact`}
+        src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/portraits/${key}.png`}
+      />
+      <h3 css={titleStyle}>{name}</h3>
+      <div css={subtitleStyle}>{vision.toLowerCase()}</div>
+      {/* <br />
       Class / Vision: {vision}
       <br />
       Weapon wielded: {weapon}
@@ -20,8 +38,8 @@ const CharacterCard = ({ data }) => {
       <br />
       {description}
       <br />
-      <Link to={`/character/${key}`}>More details about {name}</Link>
-    </article>
+      <Link to={`/character/${key}`}>More details about {name}</Link> */}
+    </Link>
   )
 }
 

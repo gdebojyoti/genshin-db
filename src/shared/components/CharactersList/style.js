@@ -5,3 +5,9 @@ export const inlineResetStyle = css`
   text-decoration: underline;
   cursor: pointer;
 `
+
+export const cardsContainerStyle = css`
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+`

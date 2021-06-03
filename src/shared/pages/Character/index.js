@@ -64,7 +64,7 @@ const Character = ({ match, ...rest }) => {
       Constellation: {constellation}
 
       <br />
-      <Image style={portraitStyle} alt={`${name} portrait image from Genshin Impact`} src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/${key}/portrait.png`} />
+      <Image style={portraitStyle} alt={`${name} portrait image from Genshin Impact`} src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/portraits/${key}.png`} />
       <br />
 
       <Link to='/'>Return to All Characters</Link>
