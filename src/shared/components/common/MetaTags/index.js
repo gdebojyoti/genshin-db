@@ -3,8 +3,8 @@ import { Helmet } from 'react-helmet'
 
 const MetaTags = props => {
   const {
-    title = 'Genshin Impact Database',
-    description = 'Database of items found in Genshin Impact video game'
+    title = 'Genshin Impact Game Database | Fan Project',
+    description = 'Database of characters & items found in Genshin Impact video game. To help players on PC, Switch, Playstation, Android & iOS platforms'
   } = props
   return (
     <Helmet>
