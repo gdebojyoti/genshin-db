@@ -5,8 +5,17 @@ import Image from 'shared/components/common/Image'
 import visions from 'shared/data/visions.json'
 import weapons from 'shared/data/weapons.json'
 import {
+  filterContainerStyle,
+  inputWrapperStyle,
+  inputStyle,
+
+  filterWrapperStyle,
   filtersStyle,
-  visionIconStyle
+  filterItemStyle,
+  activeVisionStyle,
+  activeWeaponStyle,
+  itemIconStyle
+  // itemLabelStyle
 } from './style'
 
 const CharactersFilter = (props) => {
@@ -34,25 +43,60 @@ const CharactersFilter = (props) => {
   }
 
   return (
-    <div>
-      <h3>Search by name</h3>
-      <input placeholder={'Type any character\'s name'} type='text' value={inputValue} onChange={onChange} />
+    <div css={filterContainerStyle}>
+      <label css={inputWrapperStyle}>
+        <h3>Search by name</h3>
+        <input
+          placeholder={'Type any character\'s name'}
+          type='text'
+          value={inputValue}
+          onChange={onChange}
+          css={inputStyle}
+        />
+      </label>
 
-      <h3>Filter by vision ("type" / "class")</h3>
-      <div css={filtersStyle}>
-        {visions.map(({ key, name }) => (
-          <div onClick={() => onSelectVision(key)} key={key}>
-            {name}
-            <Image
-              alt={name}
-              src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/elements/${key}.png`}
-              style={visionIconStyle}
-            />
-          </div>
-        ))}
+      <div css={filterWrapperStyle}>
+        <h3>Filter by vision ("type" / "class")</h3>
+        <div css={filtersStyle}>
+          {visions.map(({ key, name }) => (
+            <div
+              title={name}
+              css={[filterItemStyle, vision === key && activeVisionStyle(key)]}
+              onClick={() => onSelectVision(key)}
+              key={key}
+            >
+              <Image
+                alt={name}
+                src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/elements/${key}.png`}
+                style={itemIconStyle}
+              />
+              {/* <span css={itemLabelStyle}>{name}</span> */}
+            </div>
+          ))}
+        </div>
       </div>
 
-      <h3>Filter by weapon</h3>
+      <div css={filterWrapperStyle}>
+        <h3>Filter by weapon</h3>
+        <div css={filtersStyle}>
+          {weapons.map(({ key, name }) => (
+            <div
+              title={name}
+              css={[filterItemStyle, weapon === key && activeWeaponStyle(key)]}
+              onClick={() => onSelectWeapon(key)}
+              key={key}
+            >
+              <Image
+                alt={name}
+                src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/weapon-types/${key}.png`}
+                style={itemIconStyle}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* <h3>Filter by weapon</h3>
       <div css={filtersStyle}>
         {weapons.map(({ key, name }) => (
           <div onClick={() => onSelectWeapon(key)} key={key}>
@@ -60,11 +104,11 @@ const CharactersFilter = (props) => {
             <Image
               alt={name}
               src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/weapon-types/${key}.png`}
-              style={visionIconStyle}
+              style={itemIconStyle}
             />
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   )
 }

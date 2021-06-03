@@ -9,5 +9,4 @@ export const inlineResetStyle = css`
 export const cardsContainerStyle = css`
   display: flex;
   flex-wrap: wrap;
-  padding: 20px;
 `

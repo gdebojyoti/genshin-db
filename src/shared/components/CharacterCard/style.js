@@ -1,13 +1,6 @@
 import { css, keyframes } from '@emotion/react'
 
-const colorSwatches = {
-  ANEMO: '#1abc9c',
-  CRYO: '#19E3F6',
-  ELECTRO: '#6338AB',
-  GEO: '#f39c12',
-  HYDRO: '#0D6887',
-  PYRO: '#C44E4D'
-}
+import { swatches } from 'shared/styles/colors'
 
 const fadeIn = keyframes`
   0% {
@@ -28,7 +21,7 @@ export const cardStyle = (vision, index) => css`
   height: 150px;
   margin: 15px;
   padding: 25px 15px;
-  background-color: ${colorSwatches[vision]};
+  background-color: ${swatches[vision]};
   opacity: 0;
   /* border-radius: 55px 15px 15px; */
   border-radius: 20px;
@@ -44,7 +37,7 @@ export const cardStyle = (vision, index) => css`
     z-index: -1;
     width: 80px;
     height: 100px;
-    box-shadow: 0 5px 20px 0 ${colorSwatches[vision]};
+    box-shadow: 0 5px 20px 0 ${swatches[vision]};
   }
 `
 

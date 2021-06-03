@@ -3,9 +3,13 @@ import React from 'react'
 import MetaTags from 'shared/components/common/MetaTags'
 import CharactersList from 'shared/components/CharactersList'
 
+import {
+  pageStyle
+} from './style'
+
 const Welcome = () => {
   return (
-    <div>
+    <div css={pageStyle}>
       <MetaTags />
 
       <header>
