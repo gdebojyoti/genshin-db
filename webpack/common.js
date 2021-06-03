@@ -41,6 +41,10 @@ const commonConfig = {
         {
           from: path.resolve(directory, 'src/shared/assets'),
           to: path.resolve(directory, 'build-server/assets')
+        },
+        {
+          from: path.resolve(directory, 'src/static'),
+          to: path.resolve(directory, 'build-server/static')
         }
       ]
     })

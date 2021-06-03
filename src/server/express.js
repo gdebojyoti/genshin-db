@@ -27,6 +27,9 @@ const app = express()
 console.log('__dirname', path.resolve(__dirname, '../build-server/index.html'))
 
 // serve static assets
+app.get(/\.(xml)$/, express.static(path.resolve(__dirname, '../build-server/static')))
+
+// serve static assets
 app.get(/\.(js|css|map|ico|png)$/, express.static(path.resolve(__dirname, '../build-client')))
 
 // for any other requests, send `index.html` as a response
