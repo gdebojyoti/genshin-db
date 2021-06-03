@@ -24,6 +24,14 @@
     "description": "Every denizen of Mondstadt adores Barbara. However, she learned the word \"idol\" from a magazine."
   },
   {
+    "name": "Beidou",
+    "key": "beidou",
+    "vision_key": "ELECTRO",
+    "weapon_type": "CLAYMORE",
+    "rarity": 4,
+    "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman."
+  },
+  {
     "name": "Bennett",
     "key": "bennett",
     "vision_key": "PYRO",
@@ -94,6 +102,30 @@
     "weapon_type": "SWORD",
     "rarity": 4,
     "description": "A thinker in the Knights of Favonius with a somewhat exotic appearance."
+  },
+  {
+    "name": "Keqing",
+    "key": "keqing",
+    "vision_key": "ELECTRO",
+    "weapon_type": "SWORD",
+    "rarity": 5,
+    "description": "The Yuheng of the Liyue Qixing. Has much to say about Rex Lapis' unilateral approach to policymaking in Liyue - but in truth, gods admire skeptics such as her quite a lot."
+  },
+  {
+    "name": "Klee",
+    "key": "klee",
+    "vision_key": "PYRO",
+    "weapon_type": "CATALYST",
+    "rarity": 5,
+    "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight."
+  },
+  {
+    "name": "Lisa",
+    "key": "lisa",
+    "vision_key": "ELECTRO",
+    "weapon_type": "CATALYST",
+    "rarity": 4,
+    "description": "The languid but knowledgeable Librarian of the Knights of Favonius who was deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries."
   },
   {
     "name": "Mona",
@@ -222,37 +254,5 @@
     "weapon_type": "POLEARM",
     "rarity": 5,
     "description": "A mysterious expert contracted by the Wangsheng Funeral Parlor. Extremely knowledgeable in all things."
-  },
-  {
-    "name": "Keqing",
-    "key": "keqing",
-    "vision_key": "ELECTRO",
-    "weapon_type": "SWORD",
-    "rarity": 5,
-    "description": "The Yuheng of the Liyue Qixing. Has much to say about Rex Lapis' unilateral approach to policymaking in Liyue - but in truth, gods admire skeptics such as her quite a lot."
-  },
-  {
-    "name": "Klee",
-    "key": "klee",
-    "vision_key": "PYRO",
-    "weapon_type": "CATALYST",
-    "rarity": 5,
-    "description": "An explosives expert and a regular at the Knights of Favonius' confinement room. Also known as Fleeing Sunlight."
-  },
-  {
-    "name": "Lisa",
-    "key": "lisa",
-    "vision_key": "ELECTRO",
-    "weapon_type": "CATALYST",
-    "rarity": 4,
-    "description": "The languid but knowledgeable Librarian of the Knights of Favonius who was deemed by Sumeru Academia to be their most distinguished graduate in the past two centuries."
-  },
-  {
-    "name": "Beidou",
-    "key": "beidou",
-    "vision_key": "ELECTRO",
-    "weapon_type": "CLAYMORE",
-    "rarity": 4,
-    "description": "Captain of her crew, The Crux. She's quite an unbound and forthright woman."
   }
 ]
