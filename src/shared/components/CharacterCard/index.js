@@ -25,7 +25,7 @@ const CharacterCard = ({ data, index }) => {
       <Image
         style={iconStyle(index)}
         alt={`${name} icon from Genshin Impact`}
-        src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/portraits/${key}.png`}
+        src={`https://genshindb-debojyotighosh.s3.ap-south-1.amazonaws.com/test/characters/portraits-300/${key}.png`}
       />
       <h3 css={titleStyle}>{name}</h3>
       <div css={subtitleStyle}>{vision.toLowerCase()}</div>
