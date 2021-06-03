@@ -1,5 +1,6 @@
-import Character from 'shared/pages/Character'
 import Welcome from 'shared/pages/Welcome'
+import Characters from 'shared/pages/Characters'
+import Character from 'shared/pages/Character'
 
 const routes = [
   {
@@ -13,8 +14,8 @@ const routes = [
     isExact: true
   },
   {
-    path: '/character',
-    component: Character,
+    path: '/characters',
+    component: Characters,
     isExact: true
   }
 ]
