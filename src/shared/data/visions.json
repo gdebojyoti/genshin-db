@@ -1,0 +1,26 @@
+[
+  {
+    "key": "anemo",
+    "name": "Anemo"
+  },
+  {
+    "key": "cryo",
+    "name": "Cryo"
+  },
+  {
+    "key": "electro",
+    "name": "Electro"
+  },
+  {
+    "key": "geo",
+    "name": "Geo"
+  },
+  {
+    "key": "hydro",
+    "name": "Hydro"
+  },
+  {
+    "key": "pyro",
+    "name": "Pyro"
+  }
+]

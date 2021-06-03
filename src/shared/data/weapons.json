@@ -1,0 +1,22 @@
+[
+  {
+    "key": "bow",
+    "name": "Bow"
+  },
+  {
+    "key": "catalyst",
+    "name": "Catalyst"
+  },
+  {
+    "key": "claymore",
+    "name": "Claymore"
+  },
+  {
+    "key": "polearm",
+    "name": "Polearm"
+  },
+  {
+    "key": "sword",
+    "name": "Sword"
+  }
+]
