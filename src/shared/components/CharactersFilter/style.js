@@ -12,7 +12,7 @@ export const inputWrapperStyle = css`
   margin-top: 30px;
 `
 
-export const inputStyle = css`
+export const searchBarStyle = css`
   margin-top: 15px;
   padding: 15px;
   border: solid 1px #7f7f7f;

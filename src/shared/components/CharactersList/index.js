@@ -5,6 +5,7 @@ import CharactersFilter from 'shared/components/CharactersFilter'
 
 import characters from 'shared/data/charactersBasicData.json'
 import {
+  resultsStyle,
   inlineResetStyle,
   cardsContainerStyle
 } from './style'
@@ -52,23 +53,25 @@ const CharactersList = () => {
         setWeapon={setWeapon}
       />
 
-      {!results.length && (
-        <div>
-          No character matches the filters.
-          Please try some other filters or{' '}
-          <span css={inlineResetStyle} onClick={resetFilters}>reset 'em all</span>.
+      <div css={resultsStyle}>
+        {!results.length && (
+          <div>
+            No character matches the filters.
+            Please try some other filters or{' '}
+            <span css={inlineResetStyle} onClick={resetFilters}>reset 'em all</span>.
+          </div>
+        )}
+
+        {!!results.length && (
+          <h3>Showing {results.length} matching character{results.length > 1 ? 's' : ''}</h3>
+        )}
+
+        <div css={cardsContainerStyle}>
+          {!!results.length && results.map((data, index) => {
+            const { key } = data
+            return <CharacterCard data={data} index={index} key={key} />
+          })}
         </div>
-      )}
-
-      {!!results.length && (
-        <h3>Showing {results.length} matching character{results.length > 1 ? 's' : ''}</h3>
-      )}
-
-      <div css={cardsContainerStyle}>
-        {!!results.length && results.map((data, index) => {
-          const { key } = data
-          return <CharacterCard data={data} index={index} key={key} />
-        })}
       </div>
     </div>
   )

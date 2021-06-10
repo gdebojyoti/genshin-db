@@ -7,7 +7,7 @@ import weapons from 'shared/data/weapons.json'
 import {
   filterContainerStyle,
   inputWrapperStyle,
-  inputStyle,
+  searchBarStyle,
 
   filterWrapperStyle,
   filtersStyle,
@@ -44,16 +44,16 @@ const CharactersFilter = (props) => {
 
   return (
     <div css={filterContainerStyle}>
-      <label css={inputWrapperStyle}>
+      <div css={inputWrapperStyle}>
         <h3>Search by name</h3>
         <input
           placeholder={'Type any character\'s name'}
           type='text'
           value={inputValue}
           onChange={onChange}
-          css={inputStyle}
+          css={searchBarStyle}
         />
-      </label>
+      </div>
 
       <div css={filterWrapperStyle}>
         <h3>Filter by vision ("type" / "class")</h3>
