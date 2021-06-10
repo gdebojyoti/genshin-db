@@ -10,7 +10,6 @@ import {
 } from './style'
 
 const AdventureRank = () => {
-  console.log('data', data)
   return (
     <div css={pageStyle}>
       <MetaTags
